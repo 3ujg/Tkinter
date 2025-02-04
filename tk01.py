@@ -19,7 +19,7 @@ def main():
     aken = tk.Tk()
     aken.title("Mario ülesanded")
     aken.geometry("400x300")
-    aken.resizable(True, False)
+    aken.resizable(True, True)
    # silt
     label = tk.Label(aken, text="Chuck Norris", font=("Arial",16,"bold"), fg="blue").pack()
    # pilt
@@ -31,7 +31,7 @@ def main():
     scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
     tekst.pack(expand=True, fill=tk.BOTH)
 
-    failisisu = loe_fail("text.txt")
+    failisisu = loe_fail("tekst.txt")
     tekst.insert(tk.INSERT, failisisu)
     aken.mainloop()
 # Käivitame peafunktsiooni
